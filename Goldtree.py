@@ -204,14 +204,20 @@ def main():
     read_file = io.IOBase()
     read_file.close()
 
+    has_started = False
+
     while True:
         while True:
             try:
                 c = Command.read_cmd()
                 print(f"Received command: {c.cmd_id}")
+                has_started = True
                 break
             except usb.core.USBError:
-                pass
+                if has_started == True:
+                    return 0
+                else:
+                    pass
             except KeyboardInterrupt:
                 return 0
 

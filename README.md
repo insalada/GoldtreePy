@@ -1,7 +1,11 @@
-# GoldtreePy
-A python port of XorTroll's [Goldtree](https://github.com/XorTroll/Goldleaf/tree/master/Goldtree)
+# GoldtreePy Gui
+A GUI for the python port of XorTroll's [Goldtree](https://github.com/XorTroll/Goldleaf/tree/master/Goldtree)
 
+## Howto
 
-To use, open Goldleaf, do `sudo ./Goldtree.py [<path>...]` (`sudo` isn't required if you use udev rules), and then open **Explore content -> Remote PC (via USB)** in Goldleaf. The arguments will show up as drives in Goldleaf so that you don't have to navigate to the folders/files from the root of your computer.
+1. Open Goldleaf
+2. Open GoldtreePy Gui
+3. Search for a NSP file and click on Install
+4. Open **Explore content -> Remote PC (via USB)** in Goldleaf, then pick the NSP file
 
 To install all the dependencies, do `pip3 install -r requirements.txt`.
